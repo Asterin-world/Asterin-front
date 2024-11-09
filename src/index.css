@@ -1,0 +1,98 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Typography */
+body {
+  font-family: 'AvenirNextLTPro-Bold', sans-serif;
+  color: #000;
+}
+
+/* Flexbox Centering Utility */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flexbox Layout Utility */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* General Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00b894;
+}
+
+/* Button Reset */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* General underline utility for titles */
+.underline {
+  width: 40px;
+  height: 2px;
+  background-color: #00b894;
+  margin: 10px 0;
+}
+
+/* Utility class for hidden elements on mobile */
+.hidden-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Show hidden elements on mobile */
+  .hidden-mobile {
+    display: block;
+  }
+}
+
+/* Utility for flex-direction column (used in mobile) */
+.flex-column {
+  flex-direction: column;
+}

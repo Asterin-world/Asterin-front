@@ -1,0 +1,377 @@
+/* Third Scroll CSS */
+
+.product-section {
+    position: relative;
+    text-align: center;
+    padding: 0 0 0 0; /* Remove bottom padding */
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Sets the direction of main axis */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+  }
+    
+  .product-page {
+    display: grid;
+    grid-template-columns: 1fr 0.02fr 1fr 0.02fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Left Section */
+  .left-section {
+    grid-column: 1 / 2;
+    text-align: right;
+  }
+  
+  .left-section h1 {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;  /* Font family */
+    font-size: 60px;                         /* Font size */
+    font-weight: 600;                        /* Font weight */
+    line-height: 80px;                       /* Line height */
+    letter-spacing: 0.03em;                  /* Letter spacing */
+    text-align: right;                       /* Align text to the right */
+    opacity: 1;                              /* Ensure visibility */
+    margin: 0;
+    margin-top: 5%;
+  }
+  
+  .left-section h2 {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;  /* Font family */
+    font-size: 20px;                       /* Font size */
+    font-weight: 700;                      /* Font weight */
+    line-height: 24px;                     /* Line height */
+    letter-spacing: 0.05em;                /* Letter spacing */
+    text-align: right;                     /* Align text to the right */
+    color: #0A0A0A;                           /* Text color */
+    position: relative;                    /* To allow for underline positioning */
+  }
+  
+  .left-section h2::after {
+    content: '';                           /* Create the underline */
+    position: absolute;
+    bottom: -12px;                          /* Position the underline slightly below the text */
+    right: 0;                              /* Align the underline with the right edge */
+    width: 50px;                           /* Width of the underline */
+    height: 2px;                           /* Height of the underline */
+    background-color: #0a0a0a;                /* Color of the underline */
+  }
+  
+  
+  .left-section h3 {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;  /* Font family */
+    font-size: 20px;                       /* Font size */
+    font-weight: 700;                      /* Font weight */
+    line-height: 24px;                     /* Line height */
+    letter-spacing: 0.05em;                /* Letter spacing */
+    text-align: right;                     /* Align text to the right */
+    color: #0A0A0A;                        /* Font color */
+    position: relative;                    /* Relative positioning for underline */
+    width: 147px;                          /* Set width */
+    display: inline-block;                 /* Make it inline block to handle underline correctly */
+    margin-top: 40px;                      /* Add margin if needed */
+  }
+  
+  /* Underline */
+  .left-section h3::after {
+    content: '';                           /* Create the underline */
+    position: absolute;
+    bottom: -12px;                          /* Position underline 5px below the text */
+    right: 0;                              /* Align the underline with the right edge */
+    width: 50px;                           /* Width of the underline */
+    height: 2px;                           /* Height of the underline */
+    background-color: #0A0A0A;             /* Color of the underline */
+  }
+  
+  .left-section p {
+    font-family: 'Poppins-Light', sans-serif;    /* Font family */
+    font-size: 20px;                         /* Font size */
+    font-weight: 400;                        /* Font weight */
+    line-height: 32px;                       /* Line height */
+    text-align: right;                       /* Align text to the right */
+    color: #393939;                          /* Font color */
+    width: 468px;                            /* Set width */
+    height: 352px;                           /* Set height */
+    margin-top: 20px;                        /* Adjust margin for spacing */
+    opacity: 1;                              /* Ensure visibility */
+    display: inline-block;                   /* Make sure it behaves like a block element */
+  }
+  
+  /* Dotted Line */
+  .dotted-line {
+    width: 100%;
+    height: 100%;
+    border-left: 1px dashed #ccc; /* Lighter and thinner dotted line */
+  }
+  
+  /* Center Section */
+  .center-section {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-section .can-image-container {
+    text-align: center;
+  }
+  
+  .center-section .can-image {
+    width: 250px; /* Slightly smaller */
+    height: auto;
+    transform: rotate(10deg); /* Tilt the can image */
+  }
+  
+  /* Right Section */
+  .right-section {
+    grid-column: 5 / 6;
+    text-align: left;              /* Left-align text */
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-section h2 {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;  /* Font family */
+    font-size: 20px;                       /* Font size */
+    font-weight: 700;                      /* Font weight */
+    line-height: 24px;                     /* Line height */
+    letter-spacing: 0.05em;                /* Letter spacing */
+    text-align: left;                     /* Align text to the right */
+    color: #0A0A0A;                           /* Text color */
+    position: relative;                    /* To allow for underline positioning */
+  }
+  
+  .right-section h2::after {
+    content: '';                           /* Create the underline */
+    position: absolute;
+    bottom: -12px;                          /* Position the underline slightly below the text */
+    left: 0;                              /* Align the underline with the right edge */
+    width: 50px;                           /* Width of the underline */
+    height: 2px;                           /* Height of the underline */
+    background-color: #0a0a0a;                /* Color of the underline */
+  }
+  .right-section h3 {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;  /* Font family */
+    font-size: 20px;                       /* Font size */
+    font-weight: 700;                      /* Font weight */
+    line-height: 24px;                     /* Line height */
+    letter-spacing: 0.05em;                /* Letter spacing */
+    text-align: left;                     /* Align text to the right */
+    color: #0A0A0A;                           /* Text color */
+    position: relative;                    /* To allow for underline positioning */
+  }
+
+  .right-section h3::after {
+    content: '';                           /* Create the underline */
+    position: absolute;
+    bottom: -15px;                          /* Position the underline slightly below the text */
+    left: 0;                              /* Align the underline with the right edge */
+    width: 50px;                           /* Width of the underline */
+    height: 2px;                           /* Height of the underline */
+    background-color: #0a0a0a;                /* Color of the underline */
+  }
+
+
+  .right-section p {
+    font-family: 'Poppins-Light', sans-serif;   /* Font family */
+    font-size: 24px;                        /* Font size */
+    font-weight: 400;                       /* Font weight */
+    line-height: 32px;                      /* Line height */
+    text-align: left;                       /* Align text to the left */
+    color: #393939;                         /* Font color */
+    width: 468px;                           /* Set width */
+    height: 96px;                           /* Set height */
+    margin-top: 20px;                       /* Add some margin for spacing */
+    opacity: 1;                             /* Ensure visibility */
+    display: block;                         /* Make it block element for proper layout */
+  }
+  
+  
+  .plus-points {
+    margin-bottom: 20px; /* Adjust margin */
+  }
+  
+  .plus-points h2 {
+    font-size: 20px;  /* Reduced size */
+    margin-bottom: 10px;
+  }
+  
+  .plus-points p {
+    font-size: 20px; /* Reduced size */
+    line-height: 1.5;
+  }
+  
+  .right-section .nutrition-info {
+    display: grid;                           /* Use grid for precise control */
+    grid-template-columns: repeat(2, 1fr);   /* Two columns layout */
+    gap: 20px;                               /* Space between the boxes */
+    width: 100%;                             /* Full width of the container */
+    margin-bottom: 20px;                     /* Add space below the group */
+  }
+  
+  .nutrition-item {
+    display: flex;
+    flex-direction: column;                  /* Label on top, value below */
+    align-items: start;                     /* Center items horizontally */
+    padding: 30px;                           /* Add padding */
+    border-radius: 10px;                     /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* Soft shadow for depth */
+  }
+  .mojito-theme-nutrition-item {
+    background-color: #6D9BE11F;
+  }
+
+  .classic-theme-nutrition-item {
+    background-color: #BB2A3114;
+  }
+
+  .nutrition-item .label {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;    /* Font family */
+    font-size: 22px;                         /* Font size for the label */
+    font-weight: 200;                        /* Font weight for label */
+    color: #393939;                          /* Font color */
+    text-align: left;
+    margin-bottom: 5px;                     /* Space between label and value */
+  }
+  
+  .nutrition-item .value {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;    /* Font family for value */
+    font-size: 22px;                         /* Font size for value */
+    font-weight: 700;                        /* Bold font weight */
+    text-align: left;
+  }
+  
+/* Quantity Section */
+.quantity-selector {
+    margin-top: 30px;                         /* Space above the quantity section */
+  }
+  
+  .quantity-selector h3 {
+    font-family: 'Helvetica', sans-serif;     /* Font family */
+    font-size: 20px;                          /* Font size */
+    font-weight: 700;                         /* Bold weight */
+    line-height: 23px;                        /* Line height */
+    letter-spacing: 0.05em;                   /* Letter spacing */
+    color: #0A0A0A;                           /* Font color */
+    text-align: left;                         /* Left align text */
+    margin-bottom: 20px;                      /* Space between heading and options */
+  }
+  
+  .right-section h3::after {
+    content: '';                           /* Create the underline */
+    position: absolute;
+    bottom: -12px;                          /* Position the underline slightly below the text */
+    left: 0;                              /* Align the underline with the right edge */
+    width: 50px;                           /* Width of the underline */
+    height: 2px;                           /* Height of the underline */
+    background-color: #0a0a0a;                /* Color of the underline */
+  } 
+  
+  .quantity-options {
+    display: flex;                            /* Flexbox for horizontal layout */
+    gap: 30px;                                /* Increase the gap between options */
+    flex-wrap: wrap;                          /* Allow options to wrap to the next line if needed */
+    margin-bottom: 20px;                      /* Add margin below the options */
+  }
+
+  .quantity-option {
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 400;                        /* Default font weight */
+    line-height: 32px;
+    cursor: pointer;                          /* Make it clickable */
+    color: #0A0A0A;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for hover and bold */
+    position: relative;
+  }
+  
+.mojito-theme .quantity-option.active {
+    color: #5988D0;                           /* Active color */
+    font-weight: 700;                         /* Bold when active */
+  }
+  
+  .classic-theme .quantity-option.active {
+    color: #BB2A31;                           /* Active color */
+    font-weight: 700;                         /* Bold when active */
+  }
+
+  .mojito-theme .quantity-option:hover {
+    color: #5988D0;                           /* Hover effect to highlight the option */
+  }
+  
+  .classic-theme .quantity-option:hover {
+    color: #BB2A31;                           /* Hover effect to highlight the option */
+  }
+  
+  .quantity-option::before {
+    content: "";                              /* Add a vertical line between items */
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #0A0A0A;
+    left: -15px;
+    top: 0;
+  }
+  
+  .quantity-option:first-child::before {
+    display: none;                            /* Remove the line for the first item */
+  }
+  
+  .add-to-cart-btn {
+    padding: 15px 40px;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;                         /* Space between options and button */
+  }
+
+  .mojito-theme.add-to-cart-btn{
+    background-color: #5988D0;
+  }
+
+  .classic-theme.add-to-cart-btn{
+    background-color: #BB2A31;
+  }
+  
+  .mojito-theme.add-to-cart-btn:hover {
+    background-color: #476da0;                /* Slightly darker blue on hover */
+  }
+
+  .classic-theme.add-to-cart-btn:hover {
+    background-color: #912025;                /* Slightly darker blue on hover */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-page {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .dotted-line {
+      display: none;
+    }
+  
+    .nutrition-info .nutrition-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .quantity-options {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .quantity-option {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

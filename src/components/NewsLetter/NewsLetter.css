@@ -1,0 +1,52 @@
+/* Custom styling for the newsletter component */
+.newsletter-container {
+    background-color: #ffffff; /* Light background */
+  }
+  
+  .newsletter-subtitle {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+  }
+
+
+  .btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+/* Mojito theme button styles */
+.mojito-theme-send-btn {
+  background-color: #5988D0;
+  border: none;
+  color: #fff;
+}
+
+.mojito-theme-send-btn:hover {
+  background-color: #476da0;
+}
+
+/* Classic theme button styles */
+.classic-theme-send-btn {
+  background-color: #BB2A31;
+  border: none;
+  color: #fff;
+}
+
+.classic-theme-send-btn:hover {
+  background-color: #912025;
+}
+
+  input[type="email"]::placeholder {
+    font-style: italic;
+    color: #999;
+  }
+  

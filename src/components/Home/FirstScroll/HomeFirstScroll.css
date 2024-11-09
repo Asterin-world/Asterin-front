@@ -1,0 +1,70 @@
+/* General settings */
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+/* Center the hero section */
+.asterin-hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 200px); /* Full height minus header */
+    display: flex;
+    align-items: center;  /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    overflow: hidden;
+    background: transparent;
+}
+
+.asterin-hero-inner {
+    text-align: center;
+}
+.text-container {
+    display: grid;
+}
+/* Center the "India's First" text */
+.centered-text {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Initially hidden Mojito/Class and Energy Drink */
+.mojito-labels, .energy-drink-labels {
+    opacity: 1; /* Initially hidden */
+    font-family: 'AvenirNextLTPro-Bold', sans-serif;
+    font-size: 180px;
+    font-weight: 700;
+    line-height: 200px;
+    letter-spacing: 0.01em;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.mojito-theme {
+    color: #5988D0;
+}
+
+.classic-theme {
+    color: #BB2A31;
+}
+
+.energy-drink-labels {
+    font-size: 120px;
+    color: #000;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    display: inline-block;
+    opacity: 0; /* Start hidden */
+}

@@ -1,0 +1,88 @@
+/* Nutrition Section Styling */
+  .mojito-theme.nutrition-section{
+    background: url('./../../../assets/nutrition/nutrition-background.png') no-repeat center center; /* Center background image */
+    background-size: 600px; /* Set background size */
+    min-height: 100vh; /* Minimum height for the section */
+    width: 100vw; /* Full screen width */
+    padding: 100px 0; /* Adjust padding */
+    position: relative;
+  }
+
+  .classic-theme.nutrition-section{
+    background: url('./../../../assets/nutrition/nutrition-background.png') no-repeat center center; /* Center background image */
+    background-size: 600px; /* Set background size */
+    min-height: 100vh; /* Minimum height for the section */
+    width: 100vw; /* Full screen width */
+    padding: 100px 0; /* Adjust padding */
+    position: relative;
+  }
+
+  /* Can Image Styles */
+  .can-image {
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Card Styling */
+  .card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff; /* Customize color */
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .nutrition-card {
+    border: none;
+    border-radius: 30px;
+    height: auto; /* Auto height to avoid overflow */
+    flex: 1; /* Allow the card to take up space evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* Add padding for better spacing */
+  }
+  .mojito-theme.nutrition-card{
+    background: #6D9BE1; /* Customize card background color */
+  }
+  .classic-theme.nutrition-card{
+    background: #BB2A31; /* Customize card background color */
+  }
+  
+  /* Ensure consistent sizing for columns */
+  .nutrition-section .col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  /* Container Styling */
+  .nutrition-section .container-fluid {
+    max-width: 1400px; /* Control the maximum width */
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .nutrition-section {
+      min-height: auto; /* Remove fixed height for small screens */
+      padding: 50px 0; /* Adjust padding for smaller screens */
+    }
+  
+    .nutrition-card {
+      height: auto; /* Auto height to fit content */
+      margin-bottom: 20px; /* Add margin between cards */
+    }
+  
+    .can-image {
+      width: 250px; /* Reduce image size on small screens */
+    }
+  }
+  
